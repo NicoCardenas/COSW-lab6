@@ -1,12 +1,12 @@
-package com.escuelaing.cosw.taskplanner.Services.impl;
+package com.escuelaing.cosw.taskplanner.Persistance.impl;
 
 import java.util.List;
 
 import com.escuelaing.cosw.taskplanner.Entities.Task;
 import com.escuelaing.cosw.taskplanner.Entities.User;
-import com.escuelaing.cosw.taskplanner.Services.TaskService;
+import com.escuelaing.cosw.taskplanner.Persistance.TaskPersistance;
 
-public class TaskServiceImpl implements TaskService {
+public class TaskPersistanceImpl implements TaskPersistance {
 
     @Override
     public List<Task> geTasksList() {

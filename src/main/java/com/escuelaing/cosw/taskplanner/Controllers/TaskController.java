@@ -29,7 +29,7 @@ public class TaskController {
     @GetMapping()
     public ResponseEntity<?> geTasksList() {
         try {
-            return new ResponseEntity<>(ts.geTasksList(), HttpStatus.ACCEPTED);
+            return new ResponseEntity<>(ts.geTasks(), HttpStatus.ACCEPTED);
         } catch (Exception ex) {
             Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
             return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);

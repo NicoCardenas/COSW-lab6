@@ -28,7 +28,7 @@ public class UserController {
     @GetMapping()
     public ResponseEntity<?> getUsersList() {
         try {
-            return new ResponseEntity<>(us.getUsersList(), HttpStatus.ACCEPTED);
+            return new ResponseEntity<>(us.getUsers(), HttpStatus.ACCEPTED);
         } catch (Exception ex) {
             Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
             return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);

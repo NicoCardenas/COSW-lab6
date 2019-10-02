@@ -1,11 +1,11 @@
-package com.escuelaing.cosw.taskplanner.Services.impl;
+package com.escuelaing.cosw.taskplanner.Persistance.impl;
 
 import java.util.List;
 
 import com.escuelaing.cosw.taskplanner.Entities.User;
-import com.escuelaing.cosw.taskplanner.Services.UserService;
+import com.escuelaing.cosw.taskplanner.Persistance.UserPersistance;
 
-public class UserServiceImpl implements UserService {
+public class UserPersistanceImpl implements UserPersistance {
 
     @Override
     public List<User> getUsersList() {
